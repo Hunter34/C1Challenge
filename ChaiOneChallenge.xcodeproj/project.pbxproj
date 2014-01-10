@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6EF03E518808F7D00442CBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EF03E418808F7D00442CBB /* Foundation.framework */; };
+		F6EF03E718808F7D00442CBB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EF03E618808F7D00442CBB /* CoreGraphics.framework */; };
+		F6EF03E918808F7D00442CBB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EF03E818808F7D00442CBB /* UIKit.framework */; };
+		F6EF03EF18808F7D00442CBB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6EF03ED18808F7D00442CBB /* InfoPlist.strings */; };
+		F6EF03F118808F7D00442CBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EF03F018808F7D00442CBB /* main.m */; };
+		F6EF03F518808F7D00442CBB /* CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EF03F418808F7D00442CBB /* CCAppDelegate.m */; };
+		F6EF03F818808F7D00442CBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6EF03F618808F7D00442CBB /* Main.storyboard */; };
+		F6EF03FB18808F7D00442CBB /* CCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EF03FA18808F7D00442CBB /* CCViewController.m */; };
+		F6EF03FD18808F7D00442CBB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6EF03FC18808F7D00442CBB /* Images.xcassets */; };
+		F6EF040418808F7D00442CBB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EF040318808F7D00442CBB /* XCTest.framework */; };
+		F6EF040518808F7D00442CBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EF03E418808F7D00442CBB /* Foundation.framework */; };
+		F6EF040618808F7D00442CBB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EF03E818808F7D00442CBB /* UIKit.framework */; };
+		F6EF040E18808F7D00442CBB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6EF040C18808F7D00442CBB /* InfoPlist.strings */; };
+		F6EF041018808F7D00442CBB /* ChaiOneChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EF040F18808F7D00442CBB /* ChaiOneChallengeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6EF040718808F7D00442CBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6EF03D918808F7D00442CBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6EF03E018808F7D00442CBB;
+			remoteInfo = ChaiOneChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F6EF03E118808F7D00442CBB /* ChaiOneChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaiOneChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6EF03E418808F7D00442CBB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F6EF03E618808F7D00442CBB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F6EF03E818808F7D00442CBB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F6EF03EC18808F7D00442CBB /* ChaiOneChallenge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChaiOneChallenge-Info.plist"; sourceTree = "<group>"; };
+		F6EF03EE18808F7D00442CBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6EF03F018808F7D00442CBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6EF03F218808F7D00442CBB /* ChaiOneChallenge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChaiOneChallenge-Prefix.pch"; sourceTree = "<group>"; };
+		F6EF03F318808F7D00442CBB /* CCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCAppDelegate.h; sourceTree = "<group>"; };
+		F6EF03F418808F7D00442CBB /* CCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCAppDelegate.m; sourceTree = "<group>"; };
+		F6EF03F718808F7D00442CBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6EF03F918808F7D00442CBB /* CCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCViewController.h; sourceTree = "<group>"; };
+		F6EF03FA18808F7D00442CBB /* CCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCViewController.m; sourceTree = "<group>"; };
+		F6EF03FC18808F7D00442CBB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F6EF040218808F7D00442CBB /* ChaiOneChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChaiOneChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6EF040318808F7D00442CBB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F6EF040B18808F7D00442CBB /* ChaiOneChallengeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChaiOneChallengeTests-Info.plist"; sourceTree = "<group>"; };
+		F6EF040D18808F7D00442CBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6EF040F18808F7D00442CBB /* ChaiOneChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChaiOneChallengeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6EF03DE18808F7D00442CBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6EF03E718808F7D00442CBB /* CoreGraphics.framework in Frameworks */,
+				F6EF03E918808F7D00442CBB /* UIKit.framework in Frameworks */,
+				F6EF03E518808F7D00442CBB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6EF03FF18808F7D00442CBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6EF040418808F7D00442CBB /* XCTest.framework in Frameworks */,
+				F6EF040618808F7D00442CBB /* UIKit.framework in Frameworks */,
+				F6EF040518808F7D00442CBB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6EF03D818808F7D00442CBB = {
+			isa = PBXGroup;
+			children = (
+				F6EF03EA18808F7D00442CBB /* ChaiOneChallenge */,
+				F6EF040918808F7D00442CBB /* ChaiOneChallengeTests */,
+				F6EF03E318808F7D00442CBB /* Frameworks */,
+				F6EF03E218808F7D00442CBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6EF03E218808F7D00442CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6EF03E118808F7D00442CBB /* ChaiOneChallenge.app */,
+				F6EF040218808F7D00442CBB /* ChaiOneChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6EF03E318808F7D00442CBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6EF03E418808F7D00442CBB /* Foundation.framework */,
+				F6EF03E618808F7D00442CBB /* CoreGraphics.framework */,
+				F6EF03E818808F7D00442CBB /* UIKit.framework */,
+				F6EF040318808F7D00442CBB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6EF03EA18808F7D00442CBB /* ChaiOneChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				F6EF03F318808F7D00442CBB /* CCAppDelegate.h */,
+				F6EF03F418808F7D00442CBB /* CCAppDelegate.m */,
+				F6EF03F618808F7D00442CBB /* Main.storyboard */,
+				F6EF03F918808F7D00442CBB /* CCViewController.h */,
+				F6EF03FA18808F7D00442CBB /* CCViewController.m */,
+				F6EF03FC18808F7D00442CBB /* Images.xcassets */,
+				F6EF03EB18808F7D00442CBB /* Supporting Files */,
+			);
+			path = ChaiOneChallenge;
+			sourceTree = "<group>";
+		};
+		F6EF03EB18808F7D00442CBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6EF03EC18808F7D00442CBB /* ChaiOneChallenge-Info.plist */,
+				F6EF03ED18808F7D00442CBB /* InfoPlist.strings */,
+				F6EF03F018808F7D00442CBB /* main.m */,
+				F6EF03F218808F7D00442CBB /* ChaiOneChallenge-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6EF040918808F7D00442CBB /* ChaiOneChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6EF040F18808F7D00442CBB /* ChaiOneChallengeTests.m */,
+				F6EF040A18808F7D00442CBB /* Supporting Files */,
+			);
+			path = ChaiOneChallengeTests;
+			sourceTree = "<group>";
+		};
+		F6EF040A18808F7D00442CBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6EF040B18808F7D00442CBB /* ChaiOneChallengeTests-Info.plist */,
+				F6EF040C18808F7D00442CBB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6EF03E018808F7D00442CBB /* ChaiOneChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6EF041318808F7D00442CBB /* Build configuration list for PBXNativeTarget "ChaiOneChallenge" */;
+			buildPhases = (
+				F6EF03DD18808F7D00442CBB /* Sources */,
+				F6EF03DE18808F7D00442CBB /* Frameworks */,
+				F6EF03DF18808F7D00442CBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChaiOneChallenge;
+			productName = ChaiOneChallenge;
+			productReference = F6EF03E118808F7D00442CBB /* ChaiOneChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6EF040118808F7D00442CBB /* ChaiOneChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6EF041618808F7D00442CBB /* Build configuration list for PBXNativeTarget "ChaiOneChallengeTests" */;
+			buildPhases = (
+				F6EF03FE18808F7D00442CBB /* Sources */,
+				F6EF03FF18808F7D00442CBB /* Frameworks */,
+				F6EF040018808F7D00442CBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6EF040818808F7D00442CBB /* PBXTargetDependency */,
+			);
+			name = ChaiOneChallengeTests;
+			productName = ChaiOneChallengeTests;
+			productReference = F6EF040218808F7D00442CBB /* ChaiOneChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6EF03D918808F7D00442CBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Mark Travis";
+				TargetAttributes = {
+					F6EF040118808F7D00442CBB = {
+						TestTargetID = F6EF03E018808F7D00442CBB;
+					};
+				};
+			};
+			buildConfigurationList = F6EF03DC18808F7D00442CBB /* Build configuration list for PBXProject "ChaiOneChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6EF03D818808F7D00442CBB;
+			productRefGroup = F6EF03E218808F7D00442CBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6EF03E018808F7D00442CBB /* ChaiOneChallenge */,
+				F6EF040118808F7D00442CBB /* ChaiOneChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6EF03DF18808F7D00442CBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6EF03FD18808F7D00442CBB /* Images.xcassets in Resources */,
+				F6EF03EF18808F7D00442CBB /* InfoPlist.strings in Resources */,
+				F6EF03F818808F7D00442CBB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6EF040018808F7D00442CBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6EF040E18808F7D00442CBB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6EF03DD18808F7D00442CBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6EF03F518808F7D00442CBB /* CCAppDelegate.m in Sources */,
+				F6EF03F118808F7D00442CBB /* main.m in Sources */,
+				F6EF03FB18808F7D00442CBB /* CCViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6EF03FE18808F7D00442CBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6EF041018808F7D00442CBB /* ChaiOneChallengeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6EF040818808F7D00442CBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6EF03E018808F7D00442CBB /* ChaiOneChallenge */;
+			targetProxy = F6EF040718808F7D00442CBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6EF03ED18808F7D00442CBB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6EF03EE18808F7D00442CBB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F6EF03F618808F7D00442CBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6EF03F718808F7D00442CBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F6EF040C18808F7D00442CBB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6EF040D18808F7D00442CBB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6EF041118808F7D00442CBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F6EF041218808F7D00442CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6EF041418808F7D00442CBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChaiOneChallenge/ChaiOneChallenge-Prefix.pch";
+				INFOPLIST_FILE = "ChaiOneChallenge/ChaiOneChallenge-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F6EF041518808F7D00442CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChaiOneChallenge/ChaiOneChallenge-Prefix.pch";
+				INFOPLIST_FILE = "ChaiOneChallenge/ChaiOneChallenge-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F6EF041718808F7D00442CBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ChaiOneChallenge.app/ChaiOneChallenge";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChaiOneChallenge/ChaiOneChallenge-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ChaiOneChallengeTests/ChaiOneChallengeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F6EF041818808F7D00442CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ChaiOneChallenge.app/ChaiOneChallenge";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChaiOneChallenge/ChaiOneChallenge-Prefix.pch";
+				INFOPLIST_FILE = "ChaiOneChallengeTests/ChaiOneChallengeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6EF03DC18808F7D00442CBB /* Build configuration list for PBXProject "ChaiOneChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6EF041118808F7D00442CBB /* Debug */,
+				F6EF041218808F7D00442CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6EF041318808F7D00442CBB /* Build configuration list for PBXNativeTarget "ChaiOneChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6EF041418808F7D00442CBB /* Debug */,
+				F6EF041518808F7D00442CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F6EF041618808F7D00442CBB /* Build configuration list for PBXNativeTarget "ChaiOneChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6EF041718808F7D00442CBB /* Debug */,
+				F6EF041818808F7D00442CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6EF03D918808F7D00442CBB /* Project object */;
+}
