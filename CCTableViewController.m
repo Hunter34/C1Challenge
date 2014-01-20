@@ -91,24 +91,24 @@
 //    CGPoint origin = CGPointMake(cell.frame.origin.x, cell.frame.origin.y);
 //    [cell.postText setFrame:CGRectMake(origin.x, origin.y, pd.textBoxWidth, pd.textBoxHeight)];
 
-//    CGFloat width = cell.postText.frame.size.width;
-//    CGRect desiredFrame = CGRectMake(cell.postText.frame.origin.x, cell.postText.frame.origin.y, cell.postText.frame.size.width, CGFLOAT_MAX);
+    CGFloat width = cell.postText.frame.size.width;
+    CGRect desiredFrame = CGRectMake(cell.postText.frame.origin.x, cell.postText.frame.origin.y, cell.postText.frame.size.width, CGFLOAT_MAX);
     
-//    UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:15.0f];
-//    CGRect cellRect = cell.postText.frame;
+    UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:15.0f];
+    CGRect cellRect = cell.postText.frame;
     NSLog(@"\n\n");
     NSLog(@"%@ is table view cell before resizing", NSStringFromCGRect(cell.frame));
     NSLog(@"%@ is the label cell frame before resizing", NSStringFromCGRect(cell.postText.frame));
-//    CGRect labelSize = cell.postText.frame;
-//    labelSize = cellRect;
-//    labelSize = [cell.postText.text boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:cellFont} context:nil];
-//    CGFloat labelHeight = ceilf(labelSize.size.height);
-//    CGFloat labelWidth = ceilf(labelSize.size.width);
-//    labelSize.size.height = labelHeight;
-//    labelSize.size.width = labelWidth;
-//    cell.postText.frame = labelSize;
+    CGRect labelSize = cell.postText.frame;
+    labelSize = cellRect;
+    labelSize = [cell.postText.text boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:cellFont} context:nil];
+    CGFloat labelHeight = ceilf(labelSize.size.height);
+    CGFloat labelWidth = ceilf(labelSize.size.width);
+    labelSize.size.height = labelHeight;
+    labelSize.size.width = labelWidth;
+    cell.postText.frame = labelSize;
     
-//    [cell.postText setMinimumScaleFactor:0.0];
+    [cell.postText setMinimumScaleFactor:0.0];
     [cell.postText setNumberOfLines:0];
     [cell.postText setLineBreakMode:NSLineBreakByWordWrapping];
     [cell.postText sizeToFit];
