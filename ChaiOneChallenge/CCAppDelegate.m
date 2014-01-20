@@ -2,17 +2,20 @@
 //  CCAppDelegate.m
 //  ChaiOneChallenge
 //
-//  Created by Mark Travis on 1/10/14.
+//  Created by Mark Travis on 1/15/14.
 //  Copyright (c) 2014 Mark Travis. All rights reserved.
 //
 
 #import "CCAppDelegate.h"
+#import "AppNetDataController.h"
 
 @implementation CCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    // Call the appNet singleton and get it started on loading the data in the background
+    [[AppNetDataController defaultDataController] loadAppNetPublicPosts];
+    NSLog(@"Initialization at %f",CACurrentMediaTime());
     return YES;
 }
 							
