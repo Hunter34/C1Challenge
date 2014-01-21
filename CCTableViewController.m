@@ -88,39 +88,12 @@
     CCAppNetParsedData *pd = [ar objectAtIndex:[indexPath row]];
     [cell.postText setText:[pd postText]];
     
-//    CGPoint origin = CGPointMake(cell.frame.origin.x, cell.frame.origin.y);
-//    [cell.postText setFrame:CGRectMake(origin.x, origin.y, pd.textBoxWidth, pd.textBoxHeight)];
-
-    CGFloat width = cell.postText.frame.size.width;
-    CGRect desiredFrame = CGRectMake(cell.postText.frame.origin.x, cell.postText.frame.origin.y, cell.postText.frame.size.width, CGFLOAT_MAX);
-    
-    UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:15.0f];
-    CGRect cellRect = cell.postText.frame;
-    NSLog(@"\n\n");
-    NSLog(@"%@ is table view cell before resizing", NSStringFromCGRect(cell.frame));
-    NSLog(@"%@ is the label cell frame before resizing", NSStringFromCGRect(cell.postText.frame));
-    CGRect labelSize = cell.postText.frame;
-    labelSize = cellRect;
-    labelSize = [cell.postText.text boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:cellFont} context:nil];
-    CGFloat labelHeight = ceilf(labelSize.size.height);
-    CGFloat labelWidth = ceilf(labelSize.size.width);
-    labelSize.size.height = labelHeight;
-    labelSize.size.width = labelWidth;
-    cell.postText.frame = labelSize;
-    
-    [cell.postText setMinimumScaleFactor:0.0];
     [cell.postText setNumberOfLines:0];
     [cell.postText setLineBreakMode:NSLineBreakByWordWrapping];
     [cell.postText sizeToFit];
-//    [cell.postText layoutSubviews];
 
     [cell.avatarImage setImage:[pd avatar]];
     [cell.posterName setText:[pd name]];
-
-    NSLog(@"%@",cell.posterName.text);
-    NSLog(@"%@", cell.postText.text);
-    NSLog(@"%@ is the label cell frame", NSStringFromCGRect(cell.postText.frame));
-    NSLog(@"%@ is the table view frame", NSStringFromCGRect(cell.frame));
 
     cell.avatarImage.contentMode = UIViewContentModeScaleAspectFit;
 
@@ -129,21 +102,17 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CGFloat width = 214; // self.view.frame.size.width;
+    CGFloat width = tableView.frame.size.width;
+    CGFloat imageSize = 100.0f;
+    CGFloat cellWidth = 214.0f; //width - imageSize;
     UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:15.0f];
     NSArray *ar = [[AppNetDataController defaultDataController] arrayOfPosts];
     CCAppNetParsedData *pd = [ar objectAtIndex:[indexPath row]];
-    CGRect labelSize = [[pd postText] boundingRectWithSize:CGSizeMake(width,CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:cellFont} context:nil];
+    CGRect labelSize = [[pd postText] boundingRectWithSize:CGSizeMake(cellWidth,CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:cellFont} context:nil];
     CGFloat cellHeight = ceilf(labelSize.size.height);
-//    if (cellHeight < 66.0) {
-//        cellHeight = 80.0;
-//    }
     [[ar objectAtIndex:[indexPath row]] setTextBoxHeight:cellHeight];
     [[ar objectAtIndex:[indexPath row]] setTextBoxWidth:width];
-    NSLog(@"%@",[pd postText]);
-    NSLog(@"%@", NSStringFromCGRect(labelSize));
-    NSLog(@"%f",cellHeight);
-    return (cellHeight+33.0);
+    return (cellHeight);
 }
 
 /*
