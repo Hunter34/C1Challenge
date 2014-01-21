@@ -1,44 +1,62 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5037.2" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="nFX-v9-bAe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="nFX-v9-bAe">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Timeline Post-->
         <scene sceneID="E5F-Wz-m0h">
             <objects>
                 <tableViewController storyboardIdentifier="Timeline Post" title="App.Net Public Timeline" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nFX-v9-bAe" userLabel="Timeline Post" customClass="CCTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="382" sectionHeaderHeight="22" sectionFooterHeight="22" id="3HJ-p1-3qI">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" id="3HJ-p1-3qI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="publicTimeline" rowHeight="382" id="Hbo-Gt-Aoq" userLabel="Public Timeline" customClass="CCTableViewCell">
-                                <rect key="frame" x="0.0" y="22" width="320" height="382"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="publicTimeline" id="Hbo-Gt-Aoq" userLabel="Public Timeline" customClass="CCTableViewCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hbo-Gt-Aoq" id="jzQ-5C-ab3">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="381"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="WN0-Lf-brK" customClass="CCImageViewRoundedCorners">
-                                            <rect key="frame" x="11" y="10" width="66" height="66"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WN0-Lf-brK" customClass="CCImageViewRoundedCorners">
+                                            <rect key="frame" x="2" y="2" width="66" height="66"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="66" id="EKi-jm-cQB"/>
+                                                <constraint firstAttribute="height" constant="66" id="FC2-3y-2Nh"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c85-1o-2TY">
-                                            <rect key="frame" x="86" y="10" width="158" height="20"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c85-1o-2TY" userLabel="Poster Name">
+                                            <rect key="frame" x="76" y="2" width="46" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="1" green="0.76078432799999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post text." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" id="klg-bi-Toi">
-                                            <rect key="frame" x="86" y="32" width="214" height="22"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="249" text="Post text" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" preferredMaxLayoutWidth="242" translatesAutoresizingMaskIntoConstraints="NO" id="klg-bi-Toi" userLabel="Post Text">
+                                            <rect key="frame" x="76" y="24" width="242" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="1" green="0.40000000596046448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="c85-1o-2TY" firstAttribute="top" secondItem="jzQ-5C-ab3" secondAttribute="top" constant="2" id="0nC-VQ-g3u"/>
+                                        <constraint firstItem="klg-bi-Toi" firstAttribute="top" secondItem="c85-1o-2TY" secondAttribute="bottom" id="G1K-e2-XqB"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="c85-1o-2TY" secondAttribute="trailing" constant="2" id="KFQ-ha-jZO"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="klg-bi-Toi" secondAttribute="bottom" constant="2" id="P8K-M9-tch"/>
+                                        <constraint firstItem="c85-1o-2TY" firstAttribute="leading" secondItem="WN0-Lf-brK" secondAttribute="trailing" constant="8" symbolic="YES" id="fIC-kO-5TZ"/>
+                                        <constraint firstItem="WN0-Lf-brK" firstAttribute="top" secondItem="jzQ-5C-ab3" secondAttribute="top" constant="2" id="fZI-Ky-HU4"/>
+                                        <constraint firstAttribute="trailing" secondItem="klg-bi-Toi" secondAttribute="trailing" constant="2" id="n8Q-Cv-mmj"/>
+                                        <constraint firstItem="c85-1o-2TY" firstAttribute="leading" secondItem="klg-bi-Toi" secondAttribute="leading" id="q3z-r6-HFt"/>
+                                        <constraint firstItem="WN0-Lf-brK" firstAttribute="leading" secondItem="jzQ-5C-ab3" secondAttribute="leading" constant="2" id="uf0-Jo-j2u"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="avatarImage" destination="WN0-Lf-brK" id="ueA-Uz-DbW"/>
