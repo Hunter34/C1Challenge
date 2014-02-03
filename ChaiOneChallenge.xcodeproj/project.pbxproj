@@ -19,7 +19,6 @@
 		F66918BA1886F17E00A36A82 /* ReadMeFirst.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F66918B91886F17E00A36A82 /* ReadMeFirst.rtf */; };
 		F66918C118871D1100A36A82 /* CCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66918C018871D1100A36A82 /* CCTableViewController.m */; };
 		F6B8702F1889CB340043BDFE /* CCAppNetParsedData.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B8702E1889CB340043BDFE /* CCAppNetParsedData.m */; };
-		F6B8703A1889F9470043BDFE /* CCImageViewRoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B870391889F9470043BDFE /* CCImageViewRoundedCorners.m */; };
 		F6DA8E0618872B9400714B88 /* CCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DA8E0518872B9400714B88 /* CCTableViewCell.m */; };
 		F6EF03E518808F7D00442CBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EF03E418808F7D00442CBB /* Foundation.framework */; };
 		F6EF03E718808F7D00442CBB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EF03E618808F7D00442CBB /* CoreGraphics.framework */; };
@@ -72,8 +71,6 @@
 		F66918C018871D1100A36A82 /* CCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTableViewController.m; sourceTree = "<group>"; };
 		F6B8702D1889CB340043BDFE /* CCAppNetParsedData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAppNetParsedData.h; sourceTree = "<group>"; };
 		F6B8702E1889CB340043BDFE /* CCAppNetParsedData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAppNetParsedData.m; sourceTree = "<group>"; };
-		F6B870381889F9470043BDFE /* CCImageViewRoundedCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCImageViewRoundedCorners.h; path = ChaiOneChallenge/CCImageViewRoundedCorners.h; sourceTree = "<group>"; };
-		F6B870391889F9470043BDFE /* CCImageViewRoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCImageViewRoundedCorners.m; path = ChaiOneChallenge/CCImageViewRoundedCorners.m; sourceTree = "<group>"; };
 		F6DA8E0418872B9400714B88 /* CCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCTableViewCell.h; path = ChaiOneChallenge/CCTableViewCell.h; sourceTree = "<group>"; };
 		F6DA8E0518872B9400714B88 /* CCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCTableViewCell.m; path = ChaiOneChallenge/CCTableViewCell.m; sourceTree = "<group>"; };
 		F6EF03E118808F7D00442CBB /* ChaiOneChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaiOneChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,8 +147,7 @@
 		F66918C218871D1800A36A82 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F6B870381889F9470043BDFE /* CCImageViewRoundedCorners.h */,
-				F6B870391889F9470043BDFE /* CCImageViewRoundedCorners.m */,
+				F6EF03F618808F7D00442CBB /* Main.storyboard */,
 				F6DA8E0418872B9400714B88 /* CCTableViewCell.h */,
 				F6DA8E0518872B9400714B88 /* CCTableViewCell.m */,
 				F66918BF18871D1100A36A82 /* CCTableViewController.h */,
@@ -199,7 +195,6 @@
 			children = (
 				F6EF03F318808F7D00442CBB /* CCAppDelegate.h */,
 				F6EF03F418808F7D00442CBB /* CCAppDelegate.m */,
-				F6EF03F618808F7D00442CBB /* Main.storyboard */,
 				F6EF03FC18808F7D00442CBB /* Images.xcassets */,
 				F6EF03EB18808F7D00442CBB /* Supporting Files */,
 			);
@@ -352,7 +347,6 @@
 				F66918B11886F15900A36A82 /* AFHTTPRequestOperationManager.m in Sources */,
 				F66918B51886F15900A36A82 /* AFURLConnectionOperation.m in Sources */,
 				F66918B01886F15900A36A82 /* AFHTTPRequestOperation.m in Sources */,
-				F6B8703A1889F9470043BDFE /* CCImageViewRoundedCorners.m in Sources */,
 				F6DA8E0618872B9400714B88 /* CCTableViewCell.m in Sources */,
 				F66918B61886F15900A36A82 /* AFURLRequestSerialization.m in Sources */,
 				F66918B21886F15900A36A82 /* AFHTTPSessionManager.m in Sources */,
@@ -397,6 +391,7 @@
 				F6EF03F718808F7D00442CBB /* Base */,
 			);
 			name = Main.storyboard;
+			path = ChaiOneChallenge;
 			sourceTree = "<group>";
 		};
 		F6EF040C18808F7D00442CBB /* InfoPlist.strings */ = {

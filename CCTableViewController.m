@@ -54,6 +54,10 @@
     return [ar count];
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 20.0; // Make room at the top for the status bar
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -66,12 +70,19 @@
     [cell.avatarImage setImage:[pd avatar]];
     [cell.posterName setText:[pd name]];
     
+    // Bonus for rounded corners
+    cell.avatarImage.layer.masksToBounds = YES;
+    cell.avatarImage.layer.cornerRadius = 20.0f;
+    cell.avatarImage.layer.shadowOffset = CGSizeMake(3.0f, 3.0f);
+    cell.avatarImage.layer.shadowRadius = 10.0f;
+    cell.avatarImage.layer.shadowColor = [UIColor blackColor].CGColor;
+
     return cell;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // These "magic numbers" are here because I'm too lazy to do the right thing
+    // These "magic numbers" are here as placeholders. I need to do the right thing
     // and correctly calculate the row height and cache it. This only works on
     // 3.5" screens.
     
@@ -89,9 +100,11 @@
                                                 attributes:@{NSFontAttributeName:cellFont}
                                                    context:nil];
     
-    CGFloat cellHeight = MAX(70.0, labelSize.size.height);
+    CGFloat cellHeight = MAX(70.0, ceil(labelSize.size.height));
+    
+    CGFloat rowHeight = (cellHeight + 30.0);
 
-    return cellHeight;
+    return rowHeight;
 }
 
 @end
